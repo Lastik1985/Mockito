@@ -21,7 +21,7 @@ public class LocalizationServiceImplTest {
         LocalizationService = new LocalizationServiceImpl();
     }
     @ParameterizedTest
-    @EnumSource(value = Country.class, names = {"RUSSIA", "USA", "BRAZIL"})
+    @EnumSource(value = Country.class, names = {"GERMANY", "USA", "BRAZIL"})
     void localeTest(Country country) {
         String expected = "Welcome";
         String actual = LocalizationService.locale(country);
